@@ -11,6 +11,7 @@
         <a href="index.html">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
+        <a href="#contact">contact</a>
         <!--
         Nav: for future use when the page gets long enough where these would be useful
         -->
@@ -225,6 +226,53 @@
         -->
       </section>
       <hr />
+
+      <section id="contact">
+        <!--
+        Contact section: gets the user to provide their contact information and message me.
+        it currently does not work.
+        -->
+        <h2>Contact</h2>
+        <form action="#" method="POST">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter Full Name"
+          />
+          <br />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Email"
+          />
+          <br />
+          <label for="organization">Organization:</label>
+          <input
+            type="text"
+            name="organization"
+            id="organization"
+            placeholder="Enter Your Organization"
+          />
+          <br />
+          <label for="info">Tell Me About Yourself:</label>
+          <textarea
+            name="info"
+            id="info"
+            placeholder="Enter Your Information"
+          ></textarea>
+          <br />
+          <input type="checkbox" name="agree" id="agree" />
+          <label for="agree"
+            >I agree to send my information to Patrick Hill</label
+          >
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </main>
 
     <footer>
