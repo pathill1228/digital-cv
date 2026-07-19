@@ -1,0 +1,48 @@
+
+/*Establishing a dark background and font family for the entire cv*/
+body {
+    background-color: #0d0d0d;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/*Establishing style for all headings and table headers*/
+h1, h2, h3, th {
+    font-weight: 500;
+    color: #ffec71;
+}
+
+/*Making the h1 stand out more than the other headings using centering and text shadow*/
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px #645c21;
+    font-size: 2.2rem;
+}
+
+/*Continuing to establish font sizes for other headings and table headers*/
+h2{
+    font-size: 1.7rem;
+}
+
+h3, th {
+    font-size: 1.2rem;
+}
+
+/*font size and color for paragraphs, list items, table data, horizontal rules, and labels*/
+p, li, td, hr, label {
+    color: #ffffff;
+    line-height: 1.5rem;
+}
+
+a {
+    color: #fbf1b3;
+    text-decoration: none;
+}
+
+/*using hover to show the user that it is a clickable element*/
+a:hover {
+    color: #545454;
+    opacity: 0.5;
+}
