@@ -6,12 +6,18 @@ body {
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
+    /* adding border, padding, margin, and box sizing */
+    border: 1px solid #ffec71;
+    box-sizing: border-box;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 /*Establishing style for all headings and table headers*/
 h1, h2, h3, th {
     font-weight: 500;
     color: #ffec71;
+    box-sizing: border-box;
 }
 
 /*Making the h1 stand out more than the other headings using centering and text shadow*/
@@ -19,11 +25,13 @@ h1 {
     text-align: center;
     text-shadow: 2px 2px #645c21;
     font-size: 2.2rem;
+    /* added padding to bottom of h1 to create space between the heading and the content below it */
+    padding-bottom: 0.5em;
 }
 
 /*Continuing to establish font sizes for other headings and table headers*/
 h2{
-    font-size: 1.7rem;
+    font-size: 1.9rem;
 }
 
 h3, th {
@@ -34,15 +42,109 @@ h3, th {
 p, li, td, hr, label {
     color: #ffffff;
     line-height: 1.5rem;
+    box-sizing: border-box;
+
 }
 
 a {
     color: #fbf1b3;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 /*using hover to show the user that it is a clickable element*/
-a:hover {
+a:hover, button:hover {
     color: #545454;
     opacity: 0.5;
+}
+
+
+
+/* all other things added for 2.2. other things changed or added have been commented and 
+explained in the code above*/ 
+section{
+    margin: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    border: solid #ffec71;
+    border-width: 1px 0 0 0;
+}
+
+.myinfo {
+    text-align: center;
+    font-size: 1.2rem;
+    width: auto;
+}
+
+#contact {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+p {
+    width: 50%;
+}
+
+nav {
+    text-align: center;
+    margin-top: 1rem;
+}
+nav a {
+    text-align: center;
+    margin: 0 2rem;
+    font-size: 1.2rem;
+}
+
+#profile-pic {
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 150px;
+    border: 1px solid #ffec71;
+}
+
+table {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 75%;
+    height: 300px;
+    border: 1px solid #ffec71;
+    padding: 1rem;
+}
+
+th, td {
+    border: solid #ffec71;
+    border-width: 0 0 1px 0;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+#tools {
+    text-align: center;
+}
+
+input{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input:focus {
+    border: 4px solid #ffec71;
+}
+
+label{
+    box-sizing: border-box;
+}
+
+button {
+    margin: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    background-color: #ffec71;
+    color: #0d0d0d;
+    border: none;
+    border-radius: 20px;
 }

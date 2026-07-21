@@ -15,7 +15,6 @@
   <body>
     <!-- TODO: Add your code. -->
     <header>
-      <hr />
       <nav>
         <a href="index.html">Home</a>
         <a href="#about">About</a>
@@ -25,21 +24,23 @@
         Nav: for future use when the page gets long enough where these would be useful
         -->
       </nav>
-      <hr />
     </header>
-
+    <!-- removed all hr tags -->
     <main>
       <section>
         <!--
         Hero/Home section  
         -->
-        <img src="img/profile pic.jpg" width="150" />
+        <img id="profile-pic" src="img/profile pic.jpg" />
+        <!-- removed inline width -->
         <h1>Patrick Hill</h1>
-        <p>
+        <p class="myinfo">
+          <!-- added class for specific referencing -->
           <b>Email: </b
           ><a href="mailto:pathill1228@gmail.com">pathill1228@gmail.com</a>
         </p>
-        <p><b>Phone: </b> (817)-556-1760</p>
+        <p class="myinfo"><b>Phone: </b> (817)-556-1760</p>
+        <!-- added class for specific referencing -->
       </section>
       <section id="about">
         <!--
@@ -119,7 +120,8 @@
         Tools section: using a table to display the tools I use,
         a description of them, and my level of expertise 
         -->
-        <h2>Tools</h2>
+        <h2 id="tools">Tools</h2>
+        <!-- added id for specific referencing -->
         <table>
           <thead>
             <tr>
@@ -284,8 +286,6 @@
     </main>
 
     <footer>
-      <hr />
-
       <!--
       Footer section: Links to my github and linkedin
       -->
