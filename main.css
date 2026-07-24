@@ -27,6 +27,8 @@ h1 {
     font-size: 2.2rem;
     /* added padding to bottom of h1 to create space between the heading and the content below it */
     padding-bottom: 0.5em;
+    display: flex;
+    align-items: center;
 }
 
 /*Continuing to establish font sizes for other headings and table headers*/
@@ -71,17 +73,19 @@ section{
 }
 
 .myinfo {
-    text-align: center;
-    font-size: 1.2rem;
-    width: auto;
+    font-size: 0.9rem;
+    margin: 0;
 }
 
 #contact {
     text-align: center;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-p {
+.paragraph {
     width: 50%;
 }
 
@@ -96,11 +100,13 @@ nav a {
 }
 
 #profile-pic {
-    margin: 0 auto;
     box-sizing: border-box;
     border-radius: 50%;
-    width: 150px;
-    border: 1px solid #ffec71;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #ffec71;
+    display: inline-block;
+    margin-top: 1rem;
 }
 
 table {
@@ -119,20 +125,34 @@ th, td {
     text-align: center;
 }
 
-#tools {
+#tools, #projects, #skills {
     text-align: center;
 }
 
-input{
+#name, #email, #organization, textarea{
     margin: 0.5rem;
     padding: 0.5rem;
     box-sizing: border-box;
     outline: none;
+    background: none;
+    width: 300px;   /* FIX SIZE OF CHECKBOX */
+
 }
 
-input:focus {
-    border: 4px solid #ffec71;
+textarea{
+    height: 150px;
 }
+
+input #agree {
+    width: 100px;
+}
+
+input:focus textarea:focus {
+    border: 4px solid #ffec71;
+    box-sizing: border-box;
+}
+
+
 
 label{
     box-sizing: border-box;
@@ -148,3 +168,109 @@ button {
     border: none;
     border-radius: 20px;
 }
+
+#checkbox-agree{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#checkbox-agree input{
+    margin-right: 1rem;
+}
+
+#home{
+    display: flex;
+    justify-content: space-between;
+    height: 35vh;
+}
+
+#home #links{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: end;
+}
+
+#home div .homelink {
+    display: inline-block;
+}
+
+#all-skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.skills-section{
+    width: 20%;
+}
+
+
+
+/*
+arranging the projects display. Had a lot of issues with it and 
+it still does not look how I would like but this is the best
+I could get. 
+*/
+ol li {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    margin-bottom: 1rem;
+}
+
+ol {
+    display: inline-block;
+    margin: 0 auto;
+    width: 60%;
+    position: relative;
+}
+
+ol li p {
+    width: 500px;
+}
+
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+.projects-section{
+    text-align: right;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+ol li img {
+    height: 250px;
+}
+
+ul li{
+    margin-bottom: 0.5rem;
+}
+
+form{
+    border: 1px solid #ffec71;
+}
+
+#form-design{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.form-part{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+/*
+Added a lot of display: flex and positions 
+Added heights and widths to attributes
+*/
